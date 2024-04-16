@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("Assets/bgImg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    height: 92vmin;
+    width: 90vmin;
+    background: linear-gradient(rgb(123, 240, 123), rgb(247, 247, 100));
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreCard {
+    position: absolute;
+    top: 9px;
+    right: 150px;
+    font-size: 40px;
+    font-family: "New Tegomin", sans-serif;
+}
+
+.head {
+    background: linear-gradient(rgb(3, 82, 3), rgb(26, 24, 24));
+    border-radius: 0.8rem;
+    border: 2px solid yellowgreen;
+    transform: scale(1.02);
+}
+
+.food {
+    background-color: rgb(19, 180, 19) ;
+    border-radius: 2rem;
+}
+
+.snake {
+    background-color: yellowgreen;
+    border-radius: 12px;
+    border: .25vmin solid rgb(0, 43, 0);
+}
